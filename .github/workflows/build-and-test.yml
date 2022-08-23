@@ -1,9 +1,9 @@
-name: homepage CI
+name: Build and Test
 
 on:
   push:
-    branches:
-      - '!master'
+    branches-ignore:
+      - master
 
 jobs:
   build:
