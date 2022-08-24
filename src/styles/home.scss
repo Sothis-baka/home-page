@@ -1,0 +1,46 @@
+@use "base";
+
+.home{
+  &__section{
+
+  }
+}
+
+.cover{
+  @include base.flex-div--center(column);
+
+  height: 100vh;
+  color: base.$color-dark;
+  font-family: base.$font-family-cover;
+
+  &__title{
+    margin: 3em;
+    font-size: 3em;
+  }
+
+  &__discover{
+    margin: 1em;
+    font-size: 1.2em;
+    text-align: center;
+
+    &__letter{
+      margin: 0 0.4em;
+    }
+
+    &__cursor{
+      @include base.blinking(0s, 0.8s);
+    }
+  }
+
+  &__scroll-down-icon{
+    &--top{
+      @include base.blinking(0s, 1.6s);
+      margin-top: 2em;
+    }
+
+    &--bottom{
+      @include base.blinking(0.2s, 1.6s);
+      margin-top: 0.4em;
+    }
+  }
+}

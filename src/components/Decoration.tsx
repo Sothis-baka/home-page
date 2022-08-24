@@ -12,4 +12,4 @@ const Decoration = () => (
     </div>
 );
 
-export default Decoration;
+export default React.memo(Decoration);

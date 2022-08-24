@@ -1,4 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* Colors */
 $color-light: #cac3cb;
 $color-medium: #d5c8cf;
 $color-dark: #655057;
+
+/* Fonts */
+$font-family-cover: Press Start\ 2P, cursive;
+
+/* Mixins */
+@mixin flex-div($dir: column){
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: wrap;
+}
+
+@mixin flex-div--center($dir: column){
+  @include flex-div($dir);
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin blinking($delay: 0s, $duration: 1s){
+  animation: blink $duration $delay infinite ease-in-out;
+}
+
+/* Animation */
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* Extensions */
