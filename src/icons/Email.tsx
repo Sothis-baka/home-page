@@ -1,3 +1,5 @@
+import React from 'react';
+
 import constants from '../utils/constants';
 
 const Email = ({ className }: { className: string }) => (
@@ -8,4 +10,4 @@ const Email = ({ className }: { className: string }) => (
     </a>
 );
 
-export default Email;
+export default React.memo(Email);

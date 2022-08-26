@@ -1,3 +1,5 @@
+import React from 'react';
+
 import constants from '../utils/constants';
 
 const Github = ({ className }: { className: string }) => (
@@ -8,4 +10,4 @@ const Github = ({ className }: { className: string }) => (
     </a>
 );
 
-export default Github;
+export default React.memo(Github);

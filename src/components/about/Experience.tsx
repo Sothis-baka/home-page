@@ -24,4 +24,4 @@ const Experience = () => (
     </div>
 );
 
-export default Experience;
+export default React.memo(Experience);

@@ -1,3 +1,5 @@
+import React from 'react';
+
 import constants from '../utils/constants';
 
 const Linkedin = ({ className }: { className: string }) => (
@@ -8,4 +10,4 @@ const Linkedin = ({ className }: { className: string }) => (
     </a>
 );
 
-export default Linkedin;
+export default React.memo(Linkedin);

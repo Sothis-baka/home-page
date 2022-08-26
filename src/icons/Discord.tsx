@@ -1,3 +1,5 @@
+import React from 'react';
+
 import constants from '../utils/constants';
 
 const Discord = ({ className }: { className: string }) => (
@@ -9,4 +11,4 @@ const Discord = ({ className }: { className: string }) => (
 
 );
 
-export default Discord;
+export default React.memo(Discord);

@@ -5,6 +5,7 @@
 
   height: 100vh;
   color: base.$color-dark;
+
   font-family: base.$font-family-cover;
 
   &__title{
@@ -39,10 +40,35 @@
   }
 }
 
+.nav{
+  @include base.flex-div--center(row, center, center);
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: base.$color-dark;
+  z-index: 3;
+
+  &__link{
+    color: base.$color-card-text;
+    font-weight: lighter;
+    font-size: 1.6em;
+
+    padding: 1em 2em;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
 
 .section{
+  box-sizing: border-box;
+  min-height: 100vh;
+  border-top: 1px solid base.$color-dark;
+  padding: 8em 0;
+
   &__title{
-    padding-top: 2em;
     text-align: center;
     font-size: 3.2em;
     color: base.$color-dark;
@@ -121,6 +147,8 @@
   &__scroll-up-icon{
     @extend %clickable;
 
+    display: flex;
+    justify-content: center;
     margin-bottom: 1em;
     color: base.$color-dark;
   }
