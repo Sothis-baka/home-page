@@ -1,24 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Press+Start+2P&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 /* Colors */
 $color-light: #cac3cb;
 $color-medium: #d5c8cf;
 $color-dark: #655057;
+$color-card-text: #f0f8ff;
 
 /* Fonts */
 $font-family-cover: Press Start\ 2P, cursive;
+$font-family-title: Barlow,sans-serif;
+$font-family-content: Source Sans Pro, sans-serif;
 
 /* Mixins */
 @mixin flex-div($dir: column){
   display: flex;
   flex-direction: $dir;
-  flex-wrap: wrap;
 }
 
-@mixin flex-div--center($dir: column){
+@mixin flex-div--center($dir: column, $align-items: normal, $justify-content: normal){
   @include flex-div($dir);
-  align-items: center;
-  justify-content: center;
+  align-items: $align-items;
+  justify-content: $justify-content;
 }
 
 @mixin blinking($delay: 0s, $duration: 1s){
@@ -42,3 +44,12 @@ $font-family-cover: Press Start\ 2P, cursive;
 }
 
 /* Extensions */
+%clickable{
+  cursor: pointer;
+
+  &:hover{
+    opacity: 0.9;
+    transform: translateY(-10px);
+    transition-duration: 0.4s;
+  }
+}

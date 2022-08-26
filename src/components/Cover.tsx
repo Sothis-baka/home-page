@@ -31,12 +31,12 @@ const Discover = React.memo(() => {
 });
 
 const Cover = () => (
-    <div className='cover'>
+    <a className='cover' href='#About'>
         <div className='cover__title'>Sothis</div>
         <Discover/>
         <ArrowDown className='icon icon--large cover__scroll-down-icon--top'/>
         <ArrowDown className='icon icon--large cover__scroll-down-icon--bottom'/>
-    </div>
+    </a>
 );
 
 export default React.memo(Cover);

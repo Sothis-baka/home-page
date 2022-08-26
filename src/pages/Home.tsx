@@ -5,7 +5,7 @@ import About from '../components/About';
 import '../styles/home.scss';
 
 const Home = () => (
-    <div className='home'>
+    <div className='home page'>
         <Cover/>
         <About/>
     </div>
