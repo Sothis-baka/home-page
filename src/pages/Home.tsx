@@ -5,7 +5,6 @@ import About from '../components/About';
 import '../styles/home.scss';
 import Contact from '../components/Contact';
 import Nav from '../components/Nav';
-import ArrowUp from '../icons/ArrowUp';
 
 const Home = () => (
     <div className='home page'>
