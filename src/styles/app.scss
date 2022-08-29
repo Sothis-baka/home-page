@@ -5,17 +5,12 @@
   padding: 0;
 }
 
-#root{
-  overflow: hidden;
+html{
+  scroll-behavior: smooth;
 }
 
 .app{
   position: relative;
-
-  width: 100vw;
-
-  overflow-x: hidden;
-  overflow-y: scroll;
 
   font-family: base.$font-family-content;
 
@@ -25,12 +20,10 @@
 
 .page{
   position: relative;
+
   z-index: 1;
 }
 
-a{
-  text-decoration: none;
-}
 
 .icon{
   &--large{
@@ -40,4 +33,12 @@ a{
   &--extra-large{
     height: 3.2em;
   }
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
 }

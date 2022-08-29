@@ -10,7 +10,7 @@ const Skill = ()=> (
         <div className='section__module__row'>
             {
                 Array.from(constants.mySkills.keys()).map(
-                    (k) => {
+                    (k: string) => {
                         const list: (string[]|undefined) = constants.mySkills.get(k);
 
                         return (
@@ -20,7 +20,7 @@ const Skill = ()=> (
                                 <ul>
                                     {
                                         list?.map(
-                                            value => (
+                                            (value: string) => (
                                                 <div key={ `${k}_${value}` }>
                                                     { value }
                                                 </div>
@@ -37,4 +37,4 @@ const Skill = ()=> (
     </div>
 );
 
-export default Skill;
+export default React.memo(Skill);

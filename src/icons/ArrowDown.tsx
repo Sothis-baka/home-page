@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ArrowDown = ({ className }: { className: string }) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.902 41.933" className={ className }>
         <g id="Group_1" data-name="Group 1" transform="translate(-923.369 -1000.533)">
@@ -7,4 +9,4 @@ const ArrowDown = ({ className }: { className: string }) => (
     </svg>
 );
 
-export default ArrowDown;
+export default React.memo(ArrowDown);

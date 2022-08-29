@@ -3,14 +3,14 @@ import sleep from '../utils/sleep';
 import ArrowDown from '../icons/ArrowDown';
 
 const Discover = React.memo(() => {
-    const[showing, setShowing] = useState("");
-    const[incr, setIncr] = useState(true);
-    const fullMsg = "Discover";
+    const[showing, setShowing] = useState<string>("");
+    const[incr, setIncr] = useState<boolean>(true);
+    const fullMsg:string = "Discover";
 
     useEffect(() => {
         const tick = setInterval(async () => {
             if(incr) await sleep(120);
-            const newShowing = fullMsg.substring(0, showing.length + (incr ? 1 : -1));
+            const newShowing:string = fullMsg.substring(0, showing.length + (incr ? 1 : -1));
             setShowing(newShowing);
             if(newShowing === "" || newShowing === fullMsg){
                 await sleep(newShowing === "" ? 480 : 960);

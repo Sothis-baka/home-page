@@ -18,4 +18,4 @@ const Bio = () => (
     </div>
 );
 
-export default Bio;
+export default React.memo(Bio);
