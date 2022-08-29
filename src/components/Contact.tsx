@@ -3,12 +3,11 @@ import Github from '../icons/Github';
 import Linkedin from '../icons/Linkedin';
 import Email from '../icons/Email';
 import Discord from '../icons/Discord';
+import ArrowUp from '../icons/ArrowUp';
 
 const Contact = () => (
     <div id='Contact' className='contact section'>
-        <div className='section__br'>
-        </div>
-
+        <ArrowUp className='icon icon--extra-large'/>
         <div className='section__title'>
             Contact
         </div>
