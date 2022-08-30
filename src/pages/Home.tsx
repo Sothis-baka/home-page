@@ -5,8 +5,6 @@ import Nav from '../components/Nav';
 import About from '../components/About';
 import Contact from '../components/Contact';
 
-import '../styles/home.scss';
-
 const Home = () => (
     <div className='home page'>
         <Cover/>

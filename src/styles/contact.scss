@@ -1,0 +1,33 @@
+@use "base";
+
+.contact{
+  &__scroll-up-icon{
+    @extend %clickable;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    color: base.$color-dark;
+  }
+
+
+  &__btn-group{
+    @include base.flex-div--center(row, center, center);
+    width: 100%;
+  }
+
+  &__btn{
+    @extend %clickable;
+
+    margin: 2em;
+    color: base.$color-dark;
+  }
+
+  &__top-anchor{
+    @include base.flex-div--center(row, center, center);
+    @extend %clickable;
+
+    margin-bottom: 2em;
+    color: base.$color-dark;
+  }
+}

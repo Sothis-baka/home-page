@@ -5,6 +5,8 @@ import Email from '../icons/Email';
 import Discord from '../icons/Discord';
 import ArrowUp from '../icons/ArrowUp';
 
+import '../styles/contact.scss';
+
 const Contact = () => (
     <div id='Contact' className='contact section'>
         <ArrowUp className='icon icon--extra-large'/>

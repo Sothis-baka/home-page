@@ -1,0 +1,63 @@
+@use "base";
+
+.loading{
+  position: fixed;
+
+  top: calc(50vh - 5em);
+  left: calc(50vw - 5em);
+
+  display: flex;
+  height: 10em;
+  width: 10em;
+
+  align-items: center;
+  justify-content: center;
+
+  &__outer{
+    position: absolute;
+
+    display: block;
+    height: 10em;
+    width: 10em;
+
+    border-top: 1px solid base.$color-dark;
+    border-bottom: 1px solid base.$color-dark;
+    border-radius: 50%;
+
+    animation: rotate 4s infinite;
+  }
+
+  &__inner{
+    color: base.$color-dark;
+
+    animation: blink 4s infinite;
+  }
+}
+
+/* Animations */
+@keyframes rotate{
+  0%{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

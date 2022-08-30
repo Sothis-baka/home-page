@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import sleep from '../utils/sleep';
 import ArrowDown from '../icons/ArrowDown';
 
+import '../styles/cover.scss';
+
 const Discover = React.memo(() => {
     const[showing, setShowing] = useState<string>("");
     const[incr, setIncr] = useState<boolean>(true);
