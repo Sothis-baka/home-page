@@ -81,6 +81,11 @@
 
     color: base.$color-light;
     background-color: base.$color-dark;
+
+    &:hover{
+      opacity: 0.9;
+      cursor: pointer;
+    }
   }
 }
 
