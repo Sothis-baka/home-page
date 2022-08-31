@@ -1,11 +1,11 @@
 @use "base";
 
 .contact{
+  @include base.flex-div--center(column, center, center);
+
   &__scroll-up-icon{
     @extend %clickable;
 
-    display: flex;
-    justify-content: center;
     margin-bottom: 1em;
     color: base.$color-dark;
   }
@@ -13,6 +13,7 @@
 
   &__btn-group{
     @include base.flex-div--center(row, center, center);
+    flex-wrap: wrap;
     width: 100%;
   }
 

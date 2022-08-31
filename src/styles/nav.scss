@@ -43,3 +43,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px){
+  .nav{
+    font-size: 0.8em;
+
+    &__link{
+      padding: 0 0.4em;
+    }
+  }
+}

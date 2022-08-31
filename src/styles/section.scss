@@ -41,6 +41,7 @@
       margin: 2em;
       padding: 2em;
 
+      text-align: left;
       font-size: 0.8em;
       font-weight: lighter;
       color: base.$color-card-text;
@@ -78,5 +79,19 @@
     border-radius: 50%;
     margin-right: 2em;
     align-self: center;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section{
+    &__module{
+      &__row{
+        @include base.flex-div(column);
+      }
+    }
+
+    &__photo{
+      margin: 1em 0;
+    }
   }
 }

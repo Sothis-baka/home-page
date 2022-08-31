@@ -1,7 +1,7 @@
 import React from 'react';
 
 import photo from '../../sources/photo.png';
-import constants from '../../utils/constants';
+import { myIntro } from '../../utils/constants';
 
 const Bio = () => (
     <div className='section__module'>
@@ -12,7 +12,7 @@ const Bio = () => (
         <div className='section__module__row'>
             <img src={ photo } loading='lazy' alt="Sothis's icon" className='section__photo'/>
             <div>
-                { constants.myIntro }
+                { myIntro }
             </div>
         </div>
     </div>

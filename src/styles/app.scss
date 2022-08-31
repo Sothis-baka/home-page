@@ -42,3 +42,15 @@ a{
 li{
   list-style: none;
 }
+
+@media only screen and (max-width: 1024px){
+  .app{
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .app{
+    font-size: 0.7em;
+  }
+}
