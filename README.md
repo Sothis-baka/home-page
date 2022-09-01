@@ -1,6 +1,9 @@
 # Home Page
 ### Description
 This is the source code of Sothis's home page.
+
+![Build and Test](https://github.com/Sothis-baka/home-page/actions/workflows/build-and-test.yml/badge.svg)
+![Deploy](https://github.com/Sothis-baka/home-page/actions/workflows/deploy.yml/badge.svg)
 ### Prerequisite
 Node installed.
 
