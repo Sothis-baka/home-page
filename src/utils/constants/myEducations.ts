@@ -1,8 +1,4 @@
-interface Education{
-    institution: string,
-    major: string,
-    time: string
-}
+import { Education } from '../types/Education';
 
 const myEducations: Education[] = [
     {

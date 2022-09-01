@@ -11,8 +11,8 @@ const Experience = () => (
             {
                 myExperience.map(
                     e => (
-                        <div className='section__module__card' key={`exp_${e.company}`}>
-                            <div className='section__module__card__title--bold'>{ e.company }</div>
+                        <div className='card card--clickable' key={`exp_${e.company}`}>
+                            <div className='card__title--bold'>{ e.company }</div>
                             <div>{ e.position }</div>
                             <div>{ e.team }</div>
                             <div>{ e.time }</div>

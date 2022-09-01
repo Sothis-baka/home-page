@@ -14,9 +14,9 @@ const Skill = ()=> (
                         const list: (string[]|undefined) = mySkills.get(k);
 
                         return (
-                            <div className='section__module__card section__module__card--center' key={`skill_${k}`}>
-                                <div className='section__module__card__title' key={ k }>{ k }</div>
-                                <div className='section__module__card__br'>
+                            <div className='card--center card--clickable' key={`skill_${k}`}>
+                                <div className='card__title' key={ k }>{ k }</div>
+                                <div className='card__br'>
                                 </div>
                                 <ul>
                                     {
