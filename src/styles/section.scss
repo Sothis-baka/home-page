@@ -1,0 +1,132 @@
+@use "base";
+
+.section{
+  box-sizing: border-box;
+  min-height: 100vh;
+  border-bottom: 1px solid base.$color-dark;
+  padding: 8em 0;
+
+  &__title{
+    text-align: center;
+    font-size: 3.2em;
+    color: base.$color-dark;
+    font-family: base.$font-family-title;
+  }
+
+  &__module{
+    @include base.flex-div--center(column, center, normal);
+
+    margin-top: 4em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+
+    &__title{
+      margin-bottom: 1em;
+      font-size: 2em;
+      color: base.$color-dark;
+    }
+
+    &__row{
+      @include base.flex-div(row);
+      position: relative;
+      width: 80%;
+      line-height: 1.6em;
+      text-align: justify;
+    }
+  }
+
+  &__photo{
+    height: 8em;
+    width: 8em;
+    border: 1px solid base.$color-dark;
+    border-radius: 50%;
+    margin-right: 2em;
+    align-self: center;
+  }
+}
+
+.card{
+  @include base.flex-div(column);
+
+  flex: 1;
+
+  margin: 2em;
+  padding: 2em;
+  border-radius: 4px;
+
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: base.$color-card-text;
+  background-color: base.$color-dark;
+
+  &--center{
+    @extend .card;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  &--clickable{
+    @extend %clickable;
+  }
+
+  &__title{
+    font-size: 1.2em;
+  }
+
+  &__title--bold{
+    font-weight: bold;
+  }
+
+  &__br{
+    display: block;
+    width: 2.4em;
+    height: 1px;
+    margin: 1em 0;
+    background-color: base.$color-light;
+  }
+
+  &__tag-grp{
+    @include base.flex-div(row);
+    margin-top: 1em;
+    font-size: 0.8em;
+
+    &__tag{
+      margin-right: 1em;
+      padding: 0 1em;
+      border-radius: 8px;
+
+      font-weight: normal;
+      color: base.$color-dark;
+      background-color: base.$color-light;
+    }
+  }
+
+  &__link{
+    display: inline-block;
+
+    margin-right: 1em;
+    margin-top: 1em;
+    color: base.$color-card-text;
+    text-decoration: underline;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .section{
+    &__module{
+      &__row{
+        @include base.flex-div(column);
+      }
+    }
+
+    &__photo{
+      margin: 1em 0;
+    }
+  }
+}

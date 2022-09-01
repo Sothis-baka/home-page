@@ -1,5 +1,5 @@
 import React from 'react';
-import constants from '../../utils/constants';
+import { myExperience } from '../../utils/constants';
 
 const Experience = () => (
     <div className='section__module'>
@@ -9,10 +9,10 @@ const Experience = () => (
 
         <div className='section__module__row'>
             {
-                constants.myExperience.map(
+                myExperience.map(
                     e => (
-                        <div className='section__module__card' key={`exp_${e.company}`}>
-                            <div className='section__module__card__title--bold'>{ e.company }</div>
+                        <div className='card card--clickable' key={`exp_${e.company}`}>
+                            <div className='card__title--bold'>{ e.company }</div>
                             <div>{ e.position }</div>
                             <div>{ e.team }</div>
                             <div>{ e.time }</div>
