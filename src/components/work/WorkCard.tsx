@@ -1,5 +1,5 @@
 import React from 'react';
-import TagArea from './TagArea';
+import TagArea from '../TagArea';
 import { Work } from '../../utils/types/Work';
 
 const WorkCard = ({ w }: { w: Work }) => (
