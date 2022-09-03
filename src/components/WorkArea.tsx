@@ -3,7 +3,7 @@ import { myWorks } from '../utils/constants';
 import WorkCard from './work/WorkCard';
 
 const WorkArea = () => (
-    <div className='work section'>
+    <div className='section'>
         <div className='section__title'>
             Work
         </div>

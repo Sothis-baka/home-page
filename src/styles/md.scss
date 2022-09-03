@@ -1,0 +1,72 @@
+@use "base";
+
+// Using external library to convert md files into html elements, not using scss with BEM naming rules here.
+.md{
+  box-sizing: border-box;
+  padding: 2em 4em;
+  width: available;
+  overflow-x: hidden;
+
+  z-index: 1;
+
+  h3{
+    font-size: 2em;
+    margin: 0.4em 0;
+    color: base.$color-dark;
+  }
+
+  h5{
+    font-size: 1.44em;
+    margin: 0.4em 0;
+    color: base.$color-dark;
+  }
+
+  p{
+    margin: 0.2em 0;
+    word-break: break-word;
+  }
+
+  a{
+    color: base.$color-dark;
+    text-decoration: underline;
+
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
+  ul, ol{
+    margin-left: 1em;
+
+    li{
+      list-style: circle;
+      margin: 1em 0;
+    }
+  }
+
+  pre{
+    box-sizing: border-box;
+    width: available;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 12px;
+    line-height: 1.2em;
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: base.$color-card-text;
+    background-color: base.$color-dark;
+  }
+
+  .icon{
+    position: absolute;
+    top: 4em;
+    right: 4em;
+
+    color: base.$color-dark;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
+}

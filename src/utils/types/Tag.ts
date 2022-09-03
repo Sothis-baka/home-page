@@ -28,6 +28,16 @@ const enum DB {
     Vertica = 'Vertica'
 }
 
-type Tag = Language | Framework | Tool | DB;
+const enum LeetCode {
+    leetcode = 'LeetCode',
+    DP = 'DP',
+    DFS = 'DFS',
+    PQ = 'Priority Queue',
+    Double_pointers = '2 pointers',
+    Greedy = 'Greedy',
+    Tricky = 'Tricky'
+}
 
-export { type Tag, Language, Framework, Tool, DB };
+type Tag = Language | Framework | Tool | DB | LeetCode;
+
+export { type Tag, Language, Framework, Tool, DB, LeetCode };

@@ -19,11 +19,11 @@ const Nav = () => {
                         <Link to='/Home' className={ classNames('nav__link', location==='/Home' && 'nav__link--active') }>
                             <li>Home</li>
                         </Link>
-                        <Link to='/Works' className={ classNames('nav__link', location==='/Works' && 'nav__link--active') }>
-                            <li>Works</li>
+                        <Link to='/Work' className={ classNames('nav__link', location==='/Work' && 'nav__link--active') }>
+                            <li>Work</li>
                         </Link>
-                        <Link to='/Notes' className={ classNames('nav__link', location==='/Notes' && 'nav__link--active') }>
-                            <li>Notes</li>
+                        <Link to='/Note' className={ classNames('nav__link', location==='/Note' && 'nav__link--active') }>
+                            <li>Note</li>
                         </Link>
                         <a href='#Contact' className='nav__link'>
                             <li>Contact</li>

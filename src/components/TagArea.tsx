@@ -1,5 +1,5 @@
 import React, { useId } from 'react';
-import { Tag } from '../../utils/types/Tag';
+import { Tag } from '../utils/types/Tag';
 
 const TagArea = ({ tags }: { tags: Tag[] }) => {
     const id = useId(); // Generate different keys for the tags
