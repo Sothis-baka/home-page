@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useTransition} from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
@@ -33,7 +33,7 @@ const NoteDetail = () => {
             navigate('/Note');
         }
 
-    }, []);
+    }, [navigate, params.filename]);
 
     // Not ready
     if(!content) return <Loading/>
