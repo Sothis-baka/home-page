@@ -3,6 +3,18 @@ import {LeetCode} from '../types/Tag';
 
 const myNotes: Note[] = [
     {
+        name: 'Leetcode 2401 Longest Nice SubArray, Medium',
+        filename: 'leetcode_2401_longest_nice_subarray, medium.md',
+        date: '2022-09-05',
+        tags: [LeetCode.leetcode, LeetCode.Greedy, LeetCode.Bit]
+    },
+    {
+        name: 'Leetcode 2400 Number of Ways to Reach a Position After Exactly k Steps, Medium',
+        filename: 'leetcode_2400_number_of_ways_to_reach_a_position_after_exactly_k_steps, medium.md',
+        date: '2022-09-05',
+        tags: [LeetCode.leetcode, LeetCode.DP]
+    },
+    {
         name: 'Leetcode 56 Merge Interval, Medium',
         filename: 'leetcode_56_merge_internval, medium.md',
         date: '2022-04-14',

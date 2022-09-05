@@ -1,3 +1,5 @@
+@use "base";
+
 .decor{
   &--outer{
     position: fixed;
@@ -8,6 +10,9 @@
     width: 100vw;
 
     z-index: 0;
+
+    background-color: base.$color-medium;
+    background-image: linear-gradient(to top right, base.$color-light, base.$color-medium);
   }
 
   &--inner{

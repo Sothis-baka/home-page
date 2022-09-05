@@ -35,7 +35,8 @@ const enum LeetCode {
     PQ = 'Priority Queue',
     Double_pointers = '2 pointers',
     Greedy = 'Greedy',
-    Tricky = 'Tricky'
+    Tricky = 'Tricky',
+    Bit = 'Bit'
 }
 
 type Tag = Language | Framework | Tool | DB | LeetCode;
