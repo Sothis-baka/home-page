@@ -3,6 +3,12 @@ import {LeetCode} from '../types/Tag';
 
 const myNotes: Note[] = [
     {
+        name: 'LeetCode 140 Word Break II, Hard',
+        filename: 'leetCode_140_word_break_II, Hard.md',
+        date: '2022-09-23',
+        tags: [LeetCode.leetcode, LeetCode.DFS, LeetCode.DP, LeetCode.Trie]
+    },
+    {
         name: 'Leetcode 2401 Longest Nice SubArray, Medium',
         filename: 'leetcode_2401_longest_nice_subarray, medium.md',
         date: '2022-09-05',
