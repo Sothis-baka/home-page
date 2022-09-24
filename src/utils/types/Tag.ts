@@ -36,7 +36,8 @@ const enum LeetCode {
     Double_pointers = '2 pointers',
     Greedy = 'Greedy',
     Tricky = 'Tricky',
-    Bit = 'Bit'
+    Bit = 'Bit',
+    Trie= 'Trie'
 }
 
 type Tag = Language | Framework | Tool | DB | LeetCode;

@@ -88,6 +88,11 @@
     background-color: base.$color-light;
   }
 
+  &__text--small{
+    font-size: 0.8em;
+    margin-top: -0.6em;
+  }
+
   &__tag-grp{
     @include base.flex-div(row);
     flex-wrap: wrap;

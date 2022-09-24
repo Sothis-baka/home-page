@@ -10,6 +10,7 @@ const NoteCard = ({ n }: { n:Note }) => (
             <div className='card__title--bold'>
                 { n.name }
             </div>
+            <div className='card__text--small'>{ n.date }</div>
             <TagArea tags={ n.tags }/>
         </Link>
     </div>
