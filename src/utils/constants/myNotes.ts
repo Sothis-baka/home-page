@@ -3,6 +3,12 @@ import {LeetCode} from '../types/Tag';
 
 const myNotes: Note[] = [
     {
+        name: 'Leetcode 472 Concatenate Words, Hard',
+        filename: 'leetcode_472_concatenate_words, hard.md',
+        date: '2022-09-26',
+        tags: [LeetCode.leetcode, LeetCode.DFS, LeetCode.Trie]
+    },
+    {
         name: 'LeetCode 140 Word Break II, Hard',
         filename: 'leetCode_140_word_break_II, Hard.md',
         date: '2022-09-23',
