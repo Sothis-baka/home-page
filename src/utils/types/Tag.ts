@@ -4,7 +4,8 @@ const enum Language {
     JavaScript = 'JavaScript',
     TypeScript = 'TypeScript',
     SQL = 'SQL',
-    GraphQL = 'GraphQL'
+    GraphQL = 'GraphQL',
+    Python = 'Python'
 }
 
 const enum Framework {
@@ -12,7 +13,8 @@ const enum Framework {
     React = 'React.js',
     Vue = 'Vue.js',
     Express = 'Express.js',
-    Apollo_server = 'Apollo Server'
+    Apollo_server = 'Apollo Server',
+    Zmq = 'ZeroMQ'
 }
 
 const enum Tool {
@@ -28,6 +30,11 @@ const enum DB {
     Vertica = 'Vertica'
 }
 
+const enum Platform {
+    Android = 'Android',
+    Raspberrypi = 'Raspberry Pi'
+}
+
 const enum LeetCode {
     leetcode = 'LeetCode',
     DP = 'DP',
@@ -40,6 +47,6 @@ const enum LeetCode {
     Trie= 'Trie'
 }
 
-type Tag = Language | Framework | Tool | DB | LeetCode;
+type Tag = Language | Framework | Tool | DB | Platform | LeetCode;
 
-export { type Tag, Language, Framework, Tool, DB, LeetCode };
+export { type Tag, Language, Framework, Tool, DB, Platform, LeetCode };

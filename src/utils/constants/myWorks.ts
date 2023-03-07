@@ -1,7 +1,13 @@
-import { Work } from '../types/Work';
-import { DB, Framework, Language, Tool } from '../types/Tag';
+import {Work} from '../types/Work';
+import {DB, Framework, Language, Platform, Tool} from '../types/Tag';
 
 const myWorks: Work[] = [
+    {
+        name: 'Dome',
+        description: ' An end-to-end drone-based platform for monitoring emerging events.',
+        tags: [Language.JavaScript, Language.Python, Framework.Zmq, Framework.React, Platform.Raspberrypi, Tool.Docker, DB.MongoDB],
+        source_code: 'https://github.com/Sothis-baka/CS-295-DOME',
+    },
     {
         name: 'Pre Pink Pony',
         description: 'An agile service running in AWS cluster to query data from Vertica, process and display to the users.',
@@ -15,7 +21,7 @@ const myWorks: Work[] = [
     {
         name: 'Mobile Ad Inspector',
         description: 'An Android app to display Vast creative with custom players.',
-        tags: [Language.Java]
+        tags: [Language.Java, Platform.Android]
     },
     {
         name: "Sothis's Home Page",
