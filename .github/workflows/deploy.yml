@@ -6,24 +6,38 @@ on:
       - master
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        node-version: [16.x]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm install
-          npm run build
+        run: npm install
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
+      - name: Run the tests
+        run: npm test
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        run: |
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote add origin https://${github_token}@github.com/${repository}
+          npm run deploy
+        env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          user_name: sothis-baka
-          user_email: sothis.baka@gmail.com
-          cname: sothis-baka.github.io
+          repository: 'Sothis-baka/sothis-baka.github.io.git'
