@@ -1,9 +1,8 @@
 const myIntro: string = `
-        Software Engineer.
-        I'm a new MCS student at the University of California, Irvine. 
-        Previously, I was an undergrad majoring in Computer Information Science, minoring in Statistics and Psychology at the Ohio State University. 
-        I have internship experiences at The Trade Desk and Piesat Information Technology co. ltd, developing Web & mobile apps on both front-end and back-end. 
-        I'm always enthusiastic about exploring new areas and enjoy solving problems. I'm looking for opportunities to apply my knowledge and learn new skills.
+        I am a Software Engineer currently pursuing a Master of Computer Science degree at the University of California, Irvine. 
+        I hold a Bachelor's degree in Computer Information Science with minors in Statistics and Psychology from The Ohio State University. 
+        With internship experiences at The Trade Desk and Piesat Information Technology co. ltd, I have developed web and mobile applications on both the front-end and back-end. 
+        I am passionate about exploring new areas and solving problems, always eager to apply my knowledge and learn new skills.
     `;
 
 export default myIntro;
